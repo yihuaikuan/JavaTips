@@ -1,0 +1,10 @@
+//利用Collections.max()可以方法的获取数组最值
+//函数声明：public static <T extends Object & Comparable<? super T>> T max(Collection<? extends T> cl) 
+//传入的参数必须实现Comparable接口
+
+//Arrays.asList() 方法不适用于基本数据类型（byte,short,int,long,float,double,boolean），可以是包装类。
+//该方法将数组与列表链接起来，当更新其中之一时，另一个自动更新，不支持add和remove方法。
+//如果不需要改变长度可以使用Arrays.asList()
+
+int[] numbers = { 8, 2, 7, 1, 4, 9, 5};
+int min = (int) Collections.min(Arrays.asList(numbers));
